@@ -1,0 +1,17 @@
+.page {
+  background-color: #1D1D1B;
+  font-family: 'OpenSans', sans-serif; /*can't download kaspersky sans font*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;  
+  min-width: 360px;
+  min-height: 100vh;
+}
+
+.page__section {
+  box-sizing: border-box;
+  max-width: 1172px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
