@@ -1,11 +1,17 @@
+body {
+  background-color: #1D1D1B;
+}
+
 .page {
   background-color: #1D1D1B;
-  font-family: 'OpenSans', sans-serif; /*can't download kaspersky sans font*/
+  font-family: 'OpenSans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #FFFFFF;  
   min-width: 360px;
+  max-width: 1440px;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 .page__section {
@@ -14,4 +20,14 @@
   min-width: 360px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .page__section {
+    padding: 0 24px;
+  }
+}
+
+.preview {
+  height: 2000px;
 }

@@ -1,5 +1,7 @@
 @import '../assets/vendor/normalize.css';
 @import '../assets/vendor/fonts.css';
-@import '../assets/blocks/page/page.css';
-@import '../assets/blocks/header/header.css';
-@import '../assets/blocks/intro/intro.css';
+@import '../assets/blocks/page.css';
+@import '../assets/blocks/header.css';
+@import '../assets/blocks/intro.css';
+@import '../assets/blocks/buy.css';
+@import '../assets/blocks/select.css';

@@ -1,0 +1,142 @@
+.select__currency {
+  background-color: #F2F2F2;  
+  cursor: pointer;  
+  color: #1D1D1B;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+}
+
+.selected__container {  
+  padding: 0 8px;
+  height: 38px;
+  width: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select__currency-options {
+  position: absolute;
+  background-color: #F2F2F2;
+  top: 38px;
+  left: 0;
+  width: 70px;
+  z-index: 100;
+  margin: 0;
+  padding: 0;  
+}
+
+.select__currency-option {
+  height: 28px;
+  list-style-type: none;
+  padding-left: 8px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.select__currency-option::before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: #1D1D1B;
+  opacity: .4;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.select__currency .select__currency-options {
+  display: none;
+}
+
+.select__currency.is-active .select__currency-options {
+  display: block;
+}
+
+.select__product {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1D1D1B;
+  position: relative;
+  border: 2px solid #1D1D1B;
+}
+
+.selected__product-container { 
+  padding: 0 12px;
+  width: 163px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select__product-options {
+  position: absolute;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  top: 48px;
+  left: -2px;
+  width: 191px;
+  background-color: #15C1A1;
+}
+
+.select__product-options--border {
+  border: solid 2px #1D1D1B;
+}
+
+.select__product-option {
+  height: 34px;
+  list-style-type: none;
+  padding-left: 12px;
+  padding-top: 14px;
+}
+
+.select__product-option:hover {
+  background-color: #7FE3CE;
+}
+
+.select__product-option--selected {
+  background-color: #7FE3CE;
+}
+
+.select__product-option:nth-child(1) {
+  position: relative;  
+}
+
+.select__product-option:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  top: -2px;
+  left: -1px;
+  width: 189px;
+  height: 2px;
+  background-color: #15C1A1;
+}
+
+.select__product .select__product-option {
+  display: none;
+}
+
+.select__product.is-active .select__product-option {
+  display: block;
+}
+
+@media screen and (max-width: 640px) {
+  .select__product-options {
+    top: auto;
+    bottom: -2px;
+  }
+
+  .select__product-option:nth-child(1)::after {
+    display: none;
+  }
+}

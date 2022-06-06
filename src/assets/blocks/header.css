@@ -1,0 +1,23 @@
+.header {  
+  min-height: 64px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  background: rgba(29, 29, 27, .4);  
+}
+
+.header__container{
+  min-height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-bottom: -3px;
+}
+
+.header__logo-link {
+  text-decoration: none;
+}
