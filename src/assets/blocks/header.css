@@ -1,6 +1,7 @@
 .header {  
   min-height: 64px;
   width: 100%;
+  max-width: 1440px;
   position: fixed;
   top: 0;
   transition: top 0.3s;
